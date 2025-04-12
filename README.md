@@ -20,7 +20,7 @@ std::string recvFromB();
 The protocol consists of a sender (which spawns 2 background threads (one for sending and one for receiving the ACKs))
 and a receiver (which spawns one background thread for receiving the packets and sending the ACKs).
 
-The 'sendMessage()' of the sender is non blocking (it breaks up the message into packets, based on the sizes).
+The 'sendMessage()' of the sender is non blocking (it breaks up the message into packets, based on the sizes, and puts them in a buffer).
 
 The 'receiveMessage()' method of the receiver blocks until the whole message of the sender is received.
 
