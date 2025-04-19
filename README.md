@@ -51,4 +51,4 @@ Optimization 2: Replace the conditional variable of the receiver with an atomic_
 
 Optimization 3: Use better (and faster) hash function.
 
-Optimization 4: Find and add more compiler flags for even better performance (like: -fno-rtti -fno-stack-protector)
+Optimization 4: Find and add more compiler flags for even better performance (like: `-fno-rtti -fno-stack-protector`)
