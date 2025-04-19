@@ -45,7 +45,7 @@ g++ -std=c++20 main.cpp -o arq -Ofast -march=native -Wall -Wextra && ./arq
 Optimization 0: Adjust message packet size and sender timeout (in 'SnWARQ.hpp') 
 accordingly (based on your use case and channel characteristics).
 
-Optimization 1: Use the Boost library instead of the STL (list and fast allocator).
+Optimization 1: Use the Boost library instead of the STL (string, list and fast allocator).
 
 Optimization 2: Replace the conditional variable of the receiver with an atomic_flag.
 
