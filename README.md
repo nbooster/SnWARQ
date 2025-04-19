@@ -9,9 +9,9 @@ The 'SnWARQ.hpp' file implements the protocol which takes the channel (concept t
 
 The channel must be a type (class) that implements these 4 methods:
 
-void sendToA(message, size);
+void sendToA(const void* message, const std::size_t& size);
 
-void sendToB(message, size);
+void sendToB(const void* message, const std::size_t& size);
 
 std::string recvFromA();
 
