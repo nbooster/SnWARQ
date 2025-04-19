@@ -18,7 +18,7 @@ constexpr std::size_t PACKET_MESSAGE_SIZE { 16ULL };
 
 constexpr std::size_t SENDER_DEAFULT_MILLS_TIMEOUT { 64ULL };
 
-inline static const std::string END_COMMUNICATION_MESSAGE { "$END_MCOMMUNICATION$" };
+inline static const std::string END_COMMUNICATION_MESSAGE { "$END_COMMUNICATION$" };
 
 template<typename T>
 concept Channel = requires(T&& channel, const void* message, const std::size_t& size)
