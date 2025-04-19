@@ -14,7 +14,7 @@ Protocol Description here: https://www.scaler.in/stop-and-wait-arq/
 #include <mutex>
 #include <condition_variable>
 
-constexpr std::size_t PACKET_MESSAGE_SIZE { 16ULL };
+constexpr std::size_t PACKET_MESSAGE_SIZE { 1024ULL };
 
 constexpr std::size_t SENDER_DEAFULT_MILLS_TIMEOUT { 64ULL };
 
