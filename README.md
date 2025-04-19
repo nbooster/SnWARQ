@@ -39,3 +39,5 @@ g++ -std=c++20 main.cpp -o arq -Ofast -march=native -Wall -Wextra && ./arq
 *Optimization 1: Use the Boost library instead of the STL (list and fast allocator).
 
 *Optimization 2: Replace the conditional variable of the receiver with an atomic_flag.
+
+*Optimization3: Use better (and faster) hash function.
