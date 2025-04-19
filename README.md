@@ -8,7 +8,7 @@ https://www.scaler.in/stop-and-wait-arq/
 ---------------------------------------------------------------------------------------------------------------------------------
 
 The 'SnWARQ.hpp' file implements the protocol which takes the channel (concept type) as a parameter.
-'''
+```
 The channel must be a type (class) that implements these 4 methods:
 
 void sendToA(const void* message, const std::size_t& size);
@@ -18,7 +18,7 @@ void sendToB(const void* message, const std::size_t& size);
 std::string recvFromA();
 
 std::string recvFromB();
-'''
+```
 The protocol consists of a sender (which spawns 2 background threads (one for sending and one for receiving the ACKs))
 and a receiver (which spawns one background thread for receiving the packets and sending the ACKs).
 
