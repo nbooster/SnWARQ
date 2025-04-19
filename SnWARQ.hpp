@@ -18,6 +18,7 @@ constexpr std::size_t PACKET_MESSAGE_SIZE { 1024ULL };
 
 constexpr std::size_t SENDER_DEAFULT_MILLS_TIMEOUT { 64ULL };
 
+// This is better to be replaced with a secret encrypted string.
 inline static const std::string END_COMMUNICATION_MESSAGE { "$END_COMMUNICATION$" };
 
 template<typename T>
