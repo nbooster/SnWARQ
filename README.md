@@ -5,6 +5,8 @@ It is based on the most complete description of the protocol that I found here:
 
 https://www.scaler.in/stop-and-wait-arq/
 
+---------------------------------------------------------------------------------------------------------------------------------
+
 The 'SnWARQ.hpp' file implements the protocol which takes the channel (concept type) as a parameter.
 
 The channel must be a type (class) that implements these 4 methods:
@@ -32,12 +34,18 @@ The 'NoisyChannel' class simulates a two way communication channel which adds no
 
 See the 'main.cpp' for the simulation structure.
 
+------------------------------------------------------------------------------------------
+
 Compile and run: 
 
 g++ -std=c++20 main.cpp -o arq -Ofast -march=native -Wall -Wextra && ./arq
 
-*Optimization 1: Use the Boost library instead of the STL (list and fast allocator).
+-------------------------------------------------------------------------------------------
 
-*Optimization 2: Replace the conditional variable of the receiver with an atomic_flag.
+Optimization 1: Use the Boost library instead of the STL (list and fast allocator).
 
-*Optimization3: Use better (and faster) hash function.
+Optimization 2: Replace the conditional variable of the receiver with an atomic_flag.
+
+Optimization 3: Use better (and faster) hash function.
+
+Optimization 4: Find and add more compiler flags for even better performance (like: -fno-rtti -fno-stack-protector)
