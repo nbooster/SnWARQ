@@ -47,7 +47,7 @@ accordingly (based on your use case and channel characteristics).
 
 Optimization 1: Use the Boost library instead of the STL (string, list and fast allocator).
 
-Optimization 2: Replace the conditional variable of the receiver with an atomic_flag.
+Optimization 2: Use a lock-free list (sender/receiver), and an atomic_flag instead of conditional variable (receiver).
 
 Optimization 3: Use better (and faster) hash function.
 
